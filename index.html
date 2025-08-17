@@ -1,36 +1,53 @@
 <!DOCTYPE html>
-
-<!-- site made by your name-->
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page title</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+    <title>nico ailani website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<!-- sidebar navigation -->
+    <!-- Navbar Section -->
 
-<script id="replace_with_navbar" src="js/nav.js"></script>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">nico ailani</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links"> home </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/about.html" class="navbar__links"> about </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/work.html" class="navbar__links"> work </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/work.html" class="button"> reach out </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<!--end of sidebar navigation -->
+    <!-- Hero Section -->
 
-<!-- main content -->
-
-    <div class="container">
-
-    <h1>header 1</h1>
-    <h3>header 2</h3>
-    <p>this is where body text can go!!!!!
-    </p>
+    <div class="main">
+        <div class="main__containr">
+            <div class="main__content">
+                <h1> header 1</h1>
+                <h2> header 2</h2>
+                <p> text text text </p>
+                <button class="main__btn"><a href="/">Get Started</a></button>
+            </div>
+        </div>
     </div>
 
-
+    <script src="app.js"></script>
 </body>
 </html>
-
