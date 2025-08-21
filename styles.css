@@ -488,13 +488,13 @@
     }
     
     #item2 {
-        grid-column: span 1;
+        grid-column: span 2;
         grid-row: span 2;
     }
 
     #item3 {
-        grid-column: span 2;
-        grid-row: span 2;
+        grid-column: span 1;
+        grid-row: span 1;
     }
 
     #item4 {
@@ -523,7 +523,7 @@
     }
 
     #item10 {
-        grid-column: span 3;
+        grid-column: span 1;
         grid-row: span 1;
     }
 }
