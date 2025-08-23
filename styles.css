@@ -218,24 +218,12 @@
 
 .main__content h1 {
     font-size: 4rem;
-    background-color: #141414;
-    background-image: linear-gradient(to top, #000000 0%, #585858 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    color: #141414;
 }
 
 .main__content h2 {
     font-size: 3rem;
-    background-color: #464646;
-    background-image: linear-gradient(to top, #464646 0%, #8e8e8e 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    color: #414141;
 }
 
 .main__content p {
