@@ -346,13 +346,6 @@
     background: #fff;
 }
 
-.items h1 {
-    color: #141414;
-    font-family: 'Courier', Courier, monospace;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-}
-
 .items__container {
     margin: 50px;
     display: grid;
@@ -374,8 +367,9 @@
     /*box settings*/
     border-radius: 4px;
     height: 100%;
-    background-image: url('/images/pic1.png');
+    background-image: url('/images/Untitled-1.svg');
     background-size: cover;
+    border: solid 5px #141414;
     /*text settings*/
     color: #141414;
     /*spacing settings*/
@@ -386,54 +380,86 @@
     transition: all 0.3s ease;
 }
 
+.item__text {
+    /*center text box*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*text align and spacing*/
+    text-align: center;
+    width: 70%;
+    height: 40%;
+    padding: 10px;
+    /*color and border*/
+    background-color: #fff;
+    border-radius: 4px;
+    
+}
+
+.item__text h2 {
+    color: #141414;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: min(3vw, 2.5rem);
+}
+
+/*work*/
 #item1 {
     grid-column: span 3;
     grid-row: span 3;
 }
 
+/*about*/
 #item2 {
     grid-column: span 2;
     grid-row: span 3;
 }
 
+/*itch.io*/
 #item3 {
     grid-column: span 2;
     grid-row: span 2;
 }
 
+/*1*/
 #item4 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+/*2*/
+#item5 {
     grid-column: span 1;
     grid-row: span 1;
 }
 
-#item5 {
-    grid-column: span 2;
-    grid-row: span 3;
-}
-
-#item7 {
-    grid-column: span 3;
-    grid-row: span 2;
-}
-
-#item8 {
-    grid-column: span 2;
+/*3*/
+#item6 {
+    grid-column: span 1;
     grid-row: span 1;
 }
 
+/*4*/
+#item7 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/*5*/
+#item8 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/*6*/
 #item9 {
     grid-column: span 2;
     grid-row: span 1;
 }
 
+/*7*/
 #item10 {
     grid-column: span 3;
     grid-row: span 1;
-}
-
-.items h2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2rem;
 }
 
 .items__card p {
@@ -467,57 +493,64 @@
         grid-template-columns: repeat(3, minmax(100px, 1fr));
     }
 
+    /*work*/
     #item1 {
         grid-column: span 3;
         grid-row: span 3;
     }
-    
+
+    /*about*/
     #item2 {
-        grid-column: span 2;
+        grid-column: span 3;
         grid-row: span 2;
     }
 
+    /*itch.io*/
     #item3 {
-        grid-column: span 1;
+        grid-column: span 2;
         grid-row: span 1;
     }
 
+    /*1*/
     #item4 {
         grid-column: span 1;
-        grid-row: span 1;
+        grid-row: span 3;
     }
 
+    /*2*/
     #item5 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    /*3*/
+    #item6 {
         grid-column: span 1;
         grid-row: span 1;
     }
 
+    /*4*/
     #item7 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    /*5*/
+    #item8 {
         grid-column: span 1;
         grid-row: span 2;
     }
 
-    #item8 {
-        grid-column: span 2;
-        grid-row: span 1;
-    }
-
+    /*6*/
     #item9 {
         grid-column: span 2;
         grid-row: span 1;
     }
 
+    /*7*/
     #item10 {
-        grid-column: span 1;
+        grid-column: span 3;
         grid-row: span 1;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .items__container {
-        grid-template-rows: repeat(auto-fit, minmax(75px, 1fr));
-        grid-template-columns: repeat(3, minmax(75px, 1fr));
     }
 }
 
@@ -672,7 +705,7 @@
     width: 100%;
     padding: 20px;
     margin: 50px auto;
-
+    min-height: 900px;
 }
 
 .filter__buttons {
@@ -712,6 +745,7 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease-in-out;
+    
 }
 
 .card:hover {
