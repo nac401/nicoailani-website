@@ -134,7 +134,7 @@
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 0;
-        height: 30vh;
+        height: max(30vh, 275px);
         font-size: 1.6rem;
     }
 
@@ -379,6 +379,7 @@
     border: solid 5px #141414;
     /*text settings*/
     color: #141414;
+    text-decoration: none;
     /*spacing settings*/
     display: flex;
     align-items: center;
@@ -400,13 +401,12 @@
     /*color and border*/
     background-color: #fff;
     border-radius: 4px;
-    
 }
 
 .item__text h2 {
     color: #141414;
     font-family: 'Courier New', Courier, monospace;
-    font-size: clamp(1.5rem, 1.5vw, 3rem);
+    font-size: clamp(1.2rem, 2vw, 3rem);
 }
 
 /*work*/
@@ -493,7 +493,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1850px) {
 
     .items__container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -758,7 +758,6 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease-in-out;
-    
 }
 
 .card:hover {
@@ -790,4 +789,63 @@
     font-family: 'Courier Prime', Courier, monospace;
     font-size: 18px;
     color: #f0f0f0;
+}
+
+/* --------------- Individual Work Section --------------- */
+
+.individual__work {
+    background: #fff;
+}
+
+.individual__work__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.individual__work__images {
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    width: clamp(400px, 60%, 800px);
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.individual__image__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.individual__image__sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.individual__image {
+    /*image settings*/
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    width: 100%;
+    margin: 10px;
+    /*border*/
+    border: solid #141414 5px;
+    border-radius: 8px;
+}
+
+.individual__work__text {
+    background: red;
+    padding: 10px;
+    width: clamp(400px, 60%, 800px);
+    text-align: left;
+    justify-self: left;
+    justify-content: left;
 }

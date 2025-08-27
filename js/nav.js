@@ -1,4 +1,4 @@
-fetch('persistents/nav.html')
+fetch('../persistents/nav.html')
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#replace_with_navbar");
