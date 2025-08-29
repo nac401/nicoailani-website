@@ -761,6 +761,26 @@
     text-decoration: none;
 }
 
+.card:nth-child(1) {
+    flex-grow: 6;
+}
+
+.card:nth-child(3) {
+    flex-grow: 3;
+}
+
+.card:nth-child(6) {
+    flex-grow: 4;
+}
+
+.card:nth-child(11) {
+    flex-grow: 6;
+}
+
+.card:nth-child(15) {
+    flex-grow: 5;
+}
+
 .card:hover {
     transform: scale(1.03);
 }
@@ -947,4 +967,9 @@
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
 }
