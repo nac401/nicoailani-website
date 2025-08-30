@@ -19,6 +19,8 @@
     <script src="https://kit.fontawesome.com/aee7ff2241.js" crossorigin="anonymous"></script>
     <!-- SCRIPTS -->
      <script type="module" src="scroller.js"></script>
+     <script type="module" src="popup.js"></script>
+     <script type="module" src="expandable.js"></script>
 </head>
 
 <!-- BODY -->
@@ -49,12 +51,32 @@
             </div>
             <div class="page__container">
                 <div class="page__wrapper">
+                    <img class="fullscreen" src="../icons/fullscreen.svg">
+                    <div class="fullscreen__background"></div>
                     <div class="pages">
                         <img id="static_image" src="../pdfs/unionize/unionize-1.png" alt="">
                         <img id="static_image" src="../pdfs/unionize/unionize-2.png" alt="">
                         <img id="static_image" src="../pdfs/unionize/unionize-3.png" alt="">
                         <img id="static_image" src="../pdfs/unionize/unionize-4.png" alt="">
                         <img id="static_image" src="../pdfs/unionize/unionize-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="button__container">
+                <a class="button" href="/">
+                    <p>download preview</p>
+                </a>
+                <div class="expander">
+                    <p>request full work</p>
+                </div>
+            </div>
+            <div class="expandable__container">
+                <div class="triangle"></div>
+                <div class="input__box">
+                    <span class="input__details">e-mail:</span>
+                    <input type="text" placeholder="youremail@email.com">
+                    <div class="input__button">
+                        <p>send</p>
                     </div>
                 </div>
             </div>
