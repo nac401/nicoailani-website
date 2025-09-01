@@ -262,6 +262,10 @@
     text-decoration: #141414 underline 3px;
 }
 
+.main__content li i {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .main__img--container {
     text-align: center;
 }
