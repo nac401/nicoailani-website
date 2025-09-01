@@ -21,6 +21,16 @@
      <script type="module" src="scroller.js"></script>
      <script type="module" src="popup.js"></script>
      <script type="module" src="expandable.js"></script>
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "650OZPqvfXZgXrNGs",
+        });
+    })();
+    </script>
 </head>
 
 <!-- BODY -->
@@ -45,7 +55,7 @@
                 </div>
             </div>
             <div class="individual__work__text">
-                <h1>an individual work</h1>
+                <h1 class="individual__work__title">an individual work</h1>
                 <p>Lorem ipsum, whatever the hell is some. Of this text, I actually don't know. I wish I understood why it became so popular. Isn't it just easier to write something about a quick fox jumping over a lazy dog</p>
                 <p>Perhaps a second paragraph? Lorem ipsum, whatever the hell is some. Of this text, I actually don't know. I wish I understood why it became so popular. Isn't it just easier to write something about a quick fox jumping over a lazy dog</p>
             </div>
@@ -74,10 +84,10 @@
                 <div class="triangle"></div>
                 <div class="input__box">
                     <span class="input__details">e-mail:</span>
-                    <input type="text" placeholder="youremail@email.com">
-                    <div class="input__button">
+                    <input type="email" id="email" placeholder="youremail@email.com">
+                    <button type="button" class="input__button" onclick="sendEmail()">
                         <p>send</p>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -85,6 +95,8 @@
 
     <!-- #footer -->
     <script id="replace_with_footer" src="../js/footer.js"></script>
+
+    <script type="text/javascript" src="emailer.js"></script>
 
 </body>
 </html>

@@ -25,17 +25,36 @@
     <!-- Navbar Section -->
     <script id="replace_with_navbar" src="js/nav.js"></script>
 
-    <!-- About Section -->
-
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>archive</h1>
-                <p>all of the other things that didn't quite make it into my portfolio</p>
-                <button class="main__btn"><a href="/">main button</a></button>
+    <!-- Archive Section -->
+    <div class="work">
+        <div class="work__container">
+            <!-- Filter Buttons -->
+            <div class="filter__buttons">
+                <button class="active" data-name="all">show all</button>
+                <button data-name="screenplay">screenplays</button>
+                <button data-name="game script">game scripts</button>
+                <button data-name="game">games</button>
+                <button data-name="pilot">pilots</button>
+                <button data-name="feature">features</button>
+                <button data-name="short">shorts</button>
             </div>
-            <div class="main__img--container">
-                <img src="images/pic1.svg" alt="pic" id="main__img">
+
+            <!-- Filterable Cards -->
+            <div class="filterable__cards">
+                <a href="/work/work_template.html" class="card" data-name="game,game script">
+                    <img src="images/Untitled-1.svg" alt="">
+                    <div class="card__body">
+                        <h6 class="card__title">Critical One-Shots</h6>
+                        <p class="card__text">a series of D&D one-shots</p>
+                    </div>
+                </a>
+                <a href="/work/work_template.html" class="card" data-name="game">
+                    <img src="images/Untitled-1.svg" alt="">
+                    <div class="card__body">
+                        <h6 class="card__title">Prototype Studio</h6>
+                        <p class="card__text">a series of prototypes, made weekly</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -43,5 +62,7 @@
     <!-- #footer -->
     <script id="replace_with_footer" src="js/footer.js"></script>
 
+    <!-- the script -->
+    <script src="/js/work.js"></script>
 </body>
 </html>

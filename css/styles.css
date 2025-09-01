@@ -65,7 +65,7 @@
 
 .navbar__links:hover {
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
-    transform: scale(1.04);
+    transform: scale(1.03);
     transition: all 0.3s ease;
 }
 
@@ -210,35 +210,56 @@
 }
 
 .main__container {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     margin: 0 auto;
-    height: 90vh;
-    background-color: #ffffff;
+    min-height: 90vh;
+    height: 100%;
+    background-color: #fff;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     padding: 0 50px;
 }
 
+.main__content {
+    margin: 50px;
+}
+
 .main__content h1 {
-    font-size: 4rem;
+    text-align: center;
+    font-size: clamp(2.3rem, 4vw, 3.8rem);
     color: #141414;
 }
 
 .main__content h2 {
-    font-size: 3rem;
-    color: #414141;
+    margin-top: 2rem;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    color: #393939;
 }
 
 .main__content p {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 1rem;
-    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 700;
     color: #141414;
+}
+
+.main__content li {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 0.5rem;
+    font-size: clamp(0.8rem, 1.8vw, 1.3rem);
+    font-weight: 700;
+    color: #141414;
+}
+
+.main__content p a {
+    color: #141414;
+    text-decoration: #141414 underline 3px;
 }
 
 .main__img--container {
@@ -250,57 +271,10 @@
     width: 80%;
 }
 
-/* ---- Mobile Responsive, Hero ---- */
-@media screen and (max-width: 768px) {
-    .main__container {
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-self: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90 vh;
-    }
-
-    .main__content {
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-
-    .main__content h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem;
-    }
-
-    .main__content h2 {
-        font-size: 3rem;
-    }
-
-    .main__content p {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .main__content h1 {
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
-
-    .main__content h2 {
-        font-size: 2rem;
-    }
-
-    .main__content p {
-        margin-top: 2rem;
-        font-size: 1.5rem;
-    }
-
-    .main__btn {
-        padding: 12px 36px;
-        margin: 2.5rem 0;
-    }
+.separator {
+    margin: 50px 0;
+    height: 5px;
+    background-color: #141414;
 }
 
 /* --------------- Items Section CSS --------------- */
@@ -443,7 +417,7 @@
 }
 
 .items__card:hover {
-    transform: scale(1.04);
+    transform: scale(1.03);
     z-index: 1;
     cursor: pointer;
 }
@@ -819,7 +793,7 @@
 }
 
 .individual__image:hover {
-    transform: scale(1.08);
+    transform: scale(1.02);
 }
 
 .individual__work__text {
@@ -851,6 +825,8 @@
     height: 1000px;
 }
 
+/* FULLSCREEN BUTTON */
+
 .fullscreen {
     position: absolute;
     bottom: 12px;
@@ -861,7 +837,7 @@
 }
 
 .fullscreen:hover {
-    transform: scale(1.08);
+    transform: scale(1.09);
 }
 
 .fullscreen__background {
@@ -882,6 +858,8 @@
     visibility: visible;
     opacity: 0.5;
 }
+
+/* PREVIEW PAGES / CONTROLS */
 
 .page__container {
     background-color: #ffffff00;
@@ -941,7 +919,7 @@
 }
 
 .pages img::scroll-marker:hover {
-    transform: scale(1.08);
+    transform: scale(1.09);
 }
 
 .pages img::scroll-marker:target-current {
@@ -1001,6 +979,8 @@
     padding: 5px;
 }
 
+/* BUTTONS AND EXPANDER */
+
 .button, .expander {
     position: relative;
     color: #141414;
@@ -1034,6 +1014,8 @@
     color: #fff;
     background-color: #141414;
 }
+
+/* EXPANDABLE INPUT BOX */
 
 .expandable__container {
     /* align and flex */
