@@ -831,6 +831,10 @@
     padding: 1rem 0;
 }
 
+.individual__work__text i {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .individual__work__text li {
     padding-top: 1rem;
     font-family: 'Courier New', Courier, monospace;
@@ -894,7 +898,7 @@
 /* PREVIEW PAGES / CONTROLS */
 
 .page__container {
-    background-color: #ffffff00;
+    background-color: #ffffff;
     padding: 10px;
     width: clamp(400px, 60%, 800px);
 }
