@@ -261,7 +261,7 @@
 
 .main__content p a {
     color: #141414;
-    text-decoration: #141414 underline 3px;
+    text-decoration: #141414 underline 2px;
 }
 
 .main__content p i {
@@ -345,7 +345,7 @@
 .item__text h2 {
     color: #141414;
     font-family: 'Courier New', Courier, monospace;
-    font-size: clamp(1.2rem, 2vw, 3rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 /*work*/
@@ -360,18 +360,13 @@
     grid-row: span 3;
 }
 
-/*itch.io*/
-#item3 {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-/*1*/
+/*favorites*/
 #item4 {
     grid-column: span 1;
-    grid-row: span 2;
+    grid-row: span 3;
 }
 
+/* favorites special format */
 #item4 .item__text {
     height: 70%;
     width: 40%;
@@ -381,13 +376,13 @@
     transform: rotate(90deg);
 }
 
-/*2*/
+/*itch*/
 #item5 {
-    grid-column: span 1;
-    grid-row: span 1;
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
-/*3*/
+/*archive*/
 #item6 {
     grid-column: span 1;
     grid-row: span 2;
@@ -403,6 +398,12 @@
     transform: rotate(90deg);
 }
 
+/*resume*/
+#item3 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
 /* resume special format */
 #item3 .item__text {
     height: 70%;
@@ -413,15 +414,9 @@
     transform: rotate(90deg);
 }
 
-/*6*/
+/*collabs*/
 #item9 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-/*7*/
-#item10 {
-    grid-column: span 3;
+    grid-column: span 1;
     grid-row: span 1;
 }
 
@@ -437,15 +432,10 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1850px) {
+@media screen and (max-width: 2560px) {
 
     .items__container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
-    .items h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
     }
 }
 
@@ -497,12 +487,6 @@
         grid-column: span 2;
         grid-row: span 1;
     }
-
-    /*ongoing*/
-    #item10 {
-        grid-column: span 3;
-        grid-row: span 1;
-    }
 }
 
 
@@ -536,7 +520,7 @@
 
 .footer__link--wrapper {
     display: flex;
-    align-items: center;
+    align-items: top;
 }
 
 .footer__link--items {
