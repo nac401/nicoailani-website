@@ -735,7 +735,7 @@
 .card img {
     width: 100%;
     height: 275px;
-    align-self: flex-end;
+    vertical-align: top;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
 }
@@ -760,6 +760,12 @@
 
 .individual__work {
     background: #fff;
+}
+
+.individual__work iframe {
+    margin: 1rem;
+    border: solid #141414 4px;
+    border-radius: 4px;
 }
 
 .individual__work__container {

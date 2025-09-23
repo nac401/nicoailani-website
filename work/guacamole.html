@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guac-a-mole by four friends</title>
+    <!-- ICON -->
+    <link rel="icon" type="image/png" href="../icons/favicon.ico" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../icons/favicon.svg" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/aee7ff2241.js" crossorigin="anonymous"></script>
+    <!-- SCRIPTS -->
+     <script type="module" src="scroller.js"></script>
+     <script type="module" src="popup.js"></script>
+     <script type="module" src="expandable.js"></script>
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "650OZPqvfXZgXrNGs",
+        });
+    })();
+    </script>
+</head>
+
+<!-- BODY -->
+<body>
+
+    <!-- Navbar Section -->
+    <script id="replace_with_navbar" src="../js/nav.js"></script>
+
+    <!-- About Section -->
+
+    <div id="box" class="individual__work">
+        <div class="individual__work__container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fsr5lbAlo3o?si=kAQ0fEh0BT6zYLqT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <div class="individual__work__text">
+                <h1 class="individual__work__title">GUAC-A-MOLE</h1>
+                <p>Your salary just isn't cutting it so you have to start making guacamole at work to make ends meet. Use the office paper cutter to chop ingredients, toss aside any office supplies, and make sure to keep doing your job!</p>
+                <h2>accomplishments</h2>
+                <li><strong>Featured at Wonderville.</strong> Showcased at Wonderville's ALT.CTRL (alternative controller) festival.</li> 
+                <h2>notes from me</h2>
+                <p>I worked on <i>GUAC-A-MOLE</i> as the lead engineer and as a game and narrative designer.</p>
+                <p><i>GUAC</i> is a coalescence of systems, simulations, and mechanics all trying to have a conversation about labor, class, and capitalism. Like <a href="/work/youareawriter.html">you are a writer</a> and <a href="https://thewriterwins.itch.io/work">WORK</a>, <i>GUAC</i> is an attempt to craft an emergent and often personal narrative from the systems of the game, Bogost would probably call that procedural rhetoric.</p>
+            </div>
+
+            <div class="button__container">
+                <a class="button" href="https://fourfriends.games/guacamole.html">
+                    <p>website</p>
+                </a>
+            </div>
+
+            <div class="expandable__container">
+                <div class="triangle"></div>
+                <div class="input__box">
+                    <span class="input__details">e-mail:</span>
+                    <input type="email" id="email" placeholder="youremail@email.com">
+                    <button type="button" class="input__button" onclick="sendEmail()">
+                        <p>send</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #footer -->
+    <script id="replace_with_footer" src="../js/footer.js"></script>
+
+    <script type="text/javascript" src="emailer.js"></script>
+
+</body>
+</html>
