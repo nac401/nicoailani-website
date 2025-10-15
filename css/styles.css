@@ -224,11 +224,11 @@
     z-index: 1;
     width: 100%;
     max-width: 1200px;
-    padding: 0 50px;
+    padding: 0 5px;
 }
 
 .main__content {
-    margin: 50px;
+    margin: 5px;
 }
 
 .main__content h1 {
@@ -244,10 +244,11 @@
 }
 
 .main__content p {
+    text-align: left;
     font-family: 'Courier New', Courier, monospace;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
     font-weight: 700;
     color: #141414;
 }
