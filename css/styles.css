@@ -217,7 +217,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 10px auto;
     min-height: 90vh;
     height: 100%;
     background-color: #fff;
@@ -228,7 +228,7 @@
 }
 
 .main__content {
-    margin: 5px;
+    margin: 5px 25px;
 }
 
 .main__content h1 {
@@ -248,7 +248,7 @@
     font-family: 'Courier New', Courier, monospace;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: clamp(0.7rem, 2vw, 1.5rem);
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
     font-weight: 700;
     color: #141414;
 }
@@ -781,7 +781,7 @@
     display: flex;
     justify-content: center;
     background-color: #fff;
-    width: clamp(400px, 60%, 800px);
+    width: clamp(360px, 60%, 800px);
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
@@ -799,8 +799,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0.5rem;
-    width: 45%;
+    margin: 0 0.2rem;
+    width: 48%;
 }
 
 .individual__image {
@@ -820,12 +820,12 @@
 }
 
 .individual__work__text h1 {
-    font-size: clamp(1.5rem, 3.2vw, 3rem);
+    font-size: clamp(1.3rem, 3.2vw, 3rem);
     text-align: center;
 }
 
 .individual__work__text h2 {
-    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-size: clamp(1.3rem, 2.8vw, 2rem);
     padding-top: 2rem;
     text-align: center;
     color: #393939;
@@ -833,7 +833,7 @@
 
 .individual__work__text {
     background: #fff;
-    width: clamp(400px, 60%, 800px);
+    width: clamp(360px, 60%, 800px);
     text-align: left;
     justify-self: left;
     justify-content: left;
