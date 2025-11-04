@@ -233,13 +233,13 @@
 
 .main__content h1 {
     text-align: center;
-    font-size: clamp(2.3rem, 4vw, 3.8rem);
+    font-size: clamp(2.3rem, 6vw, 3.8rem);
     color: #141414;
 }
 
 .main__content h2 {
     margin-top: 2rem;
-    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-size: clamp(1.5rem, 4vw, 3rem);
     color: #393939;
 }
 
@@ -319,7 +319,7 @@
     /*box settings*/
     border-radius: 4px;
     height: 100%;
-    background-image: url('/images/Untitled-1.svg');
+    background-image: url('/images/dither1.png');
     background-size: cover;
     border: solid 5px #141414;
     /*text settings*/
@@ -815,12 +815,12 @@
 }
 
 .individual__work__text h1 {
-    font-size: clamp(1.3rem, 3.2vw, 3rem);
+    font-size: clamp(1.3rem, 3vw, 2.9rem);
     text-align: center;
 }
 
 .individual__work__text h2 {
-    font-size: clamp(1.3rem, 2.8vw, 2rem);
+    font-size: clamp(1.1rem, 2vw, 2.7rem);
     padding-top: 2rem;
     text-align: center;
     color: #393939;
@@ -832,26 +832,30 @@
     text-align: left;
     justify-self: left;
     justify-content: left;
-    margin: 10px;
+    margin: 15px;
 }
 
 .individual__work__text p {
     font-family: 'Courier New', Courier, monospace;
-    padding: 1rem 0;
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    padding: 0.5rem 0;
 }
 
 .individual__work__text i {
     font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
 }
 
 .individual__work__text li {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
     margin-left: 2.5rem;
 }
 
 .individual__work__text a {
     font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
     color: #141414;
     font-weight: 600;
 }
