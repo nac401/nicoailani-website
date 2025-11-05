@@ -1018,7 +1018,7 @@ strong {
     text-decoration: none;
     /* sizing */
     height: 50px;
-    width: 40%;
+    width: 30%;
     /* alignment */
     align-items: center;
     justify-content: center;
@@ -1026,7 +1026,7 @@ strong {
     border: solid #141414 2px;
     border-radius: 4px;
     padding: 15px 15px;
-    margin: 0px;
+    margin: 15px;
     /* cursor and transition */
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1034,7 +1034,7 @@ strong {
 
 .button p, .expander p {
     font-family: 'Courier Prime', Courier, monospace;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
     text-align: center;
     align-items: center;
     justify-content: center;
