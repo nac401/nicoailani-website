@@ -601,12 +601,12 @@ strong {
     align-items: center;
     width: 90%;
     max-width: 1000px;
-    margin: 40px auto 0 auto;
+    margin: 25px auto 25px auto;
 }
 
 .social__icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 240px;
 }
