@@ -586,6 +586,7 @@ strong {
 /* --------------- Social Icons --------------- */
 
 .social__icon--link {
+    margin: 0px 25px;
     color: #141414;
     font-size: 24px;
 }
@@ -597,7 +598,7 @@ strong {
 
 .social__media--wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 90%;
     max-width: 1000px;
