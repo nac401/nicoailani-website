@@ -280,7 +280,7 @@ strong {
 
 .main__content {
     width: 90%;
-    margin: 10px 50px;
+    margin: 15px 50px;
 }
 
 .main__img--container {
@@ -748,23 +748,24 @@ strong {
     /* FONT */
     font-size: 24px;
     font-weight: 500;
-    font-size: clamp(1rem, 5vw, 1.4rem);
+    font-size: clamp(1rem, 4vw, 1.4rem);
     color: #fff;
+    width: 1000px;
 }
 
 .card__subtitle {
     text-wrap: nowrap;
     /* FONT */
     font-family: 'Chivo';
-    font-size: clamp(0.9rem, 4vw, 1.3rem);
+    font-size: clamp(0.9rem, 3vw, 1.3rem);
     font-style: italic;
-    color: #f0f0f0;
+    color: #fff;
 }
 
 .card__text {
     margin-top: 15px;
     font-family: 'Courier Prime', Courier, monospace;
-    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-size: clamp(0.6rem, 2vw, 1.2rem);
     color: #f0f0f0;
 }
 
@@ -778,6 +779,10 @@ strong {
     }
 
     .card__text {
+        display: none;
+    }
+
+    .accompanying__card__text {
         display: none;
     }
 }
@@ -1197,4 +1202,99 @@ strong {
 .collab__box p {
     font-size: clamp(0.6rem, 1vw, 1.15rem);
     margin: 0px;
+}
+
+/* ACCOMPANYING/ACCOMPANIED CARDS/BUTTONS */
+
+.accompanied__card {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    height: clamp(100px, 20vw, 250px);
+    max-width: 1200px;
+    margin: 15px;
+    gap: 15px;
+}
+
+.accompanying__card {
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 300px;
+    background-color: #141414;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    width: 90%;
+    max-width: 1000px;
+    height: 100%;
+}
+
+.accompanying__card:hover {
+    transform: scale(1.03);
+}
+
+.accompanying__card img {
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.accompanying__button {
+    z-index: 5;
+    display: flex;
+    justify-self: center;
+    color: #141414;
+    background-color: #fff;
+    text-decoration: none;
+    /* sizing */
+    height: 100%;
+    width: 10%;
+    /* alignment */
+    align-items: center;
+    justify-content: center;
+    /* border and padding */
+    border: solid #141414 2px;
+    border-radius: 4px;
+    /* cursor and transition */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.accompanying__card__text {
+    font-size: clamp(0.8rem, 1.7vw, 1.1rem);
+    color: #fff;
+}
+
+.accompanying__text {
+    transform: rotate(90deg);
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.accompanying__text p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier Prime', Courier, monospace;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    justify-self: center;
+    text-overflow: clip;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    white-space: nowrap;
+}
+
+.accompanying__button:hover {
+    color: #fff;
+    background-color: #141414;
 }
