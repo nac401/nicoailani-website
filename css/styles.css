@@ -712,6 +712,8 @@ strong {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease-in-out;
     text-decoration: none;
+    max-height: 250px;
+    height: auto;
 }
 
 .card:hover {
@@ -724,7 +726,6 @@ strong {
 
 .card img {
     width: 30%;
-    height: 250px;
     vertical-align: top;
     object-fit: cover;
     border-radius: 8px;
@@ -736,23 +737,45 @@ strong {
 }
 
 .card__title {
+    text-wrap: nowrap;
+    /* FONT */
     font-size: 24px;
     font-weight: 500;
+    font-size: clamp(1rem, 5vw, 1.4rem);
     color: #fff;
 }
 
 .card__subtitle {
-    font-family: 'Courier Prime', Courier, monospace;
-    font-size: 20px;
+    text-wrap: nowrap;
+    /* FONT */
+    font-family: 'Chivo';
+    font-size: clamp(0.9rem, 4vw, 1.3rem);
     font-style: italic;
     color: #f0f0f0;
 }
 
 .card__text {
+    margin-top: 15px;
     font-family: 'Courier Prime', Courier, monospace;
-    font-size: 18px;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
     color: #f0f0f0;
 }
+
+@media screen and (max-width: 720px) {
+
+    .card__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+
+    .card__text {
+        display: none;
+    }
+}
+
+
 
 /* --------------- Individual Work Section --------------- */
 
@@ -988,6 +1011,7 @@ strong {
 }
 
 .button__container {
+    justify-self: center;
     display: flex;
     justify-content: center;
     overflow-wrap: wrap;
@@ -1008,7 +1032,7 @@ strong {
     text-decoration: none;
     /* sizing */
     height: 50px;
-    width: max(40%, 250px);
+    width: max(30%, 200px);
     /* alignment */
     align-items: center;
     justify-content: center;
@@ -1016,7 +1040,7 @@ strong {
     border: solid #141414 2px;
     border-radius: 4px;
     padding: 15px 15px;
-    margin: 15px;
+    margin: 10px;
     /* cursor and transition */
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1065,7 +1089,7 @@ strong {
     border-right-color: transparent;
     margin-top: -55px;
     justify-self: flex-end;
-    transform: translate(-200%, 20px);
+    transform: translate(-350%, 20px);
 }
 
 .input__box {
