@@ -7,7 +7,7 @@
 
 /* --------------- FONT DEFAULTS --------------- */
 
-p {
+p, i {
     font-family: 'Courier Prime', Courier, monospace;
     font-weight: 500;
     font-size: clamp(0.8rem, 2vw, 1.2rem);
@@ -27,9 +27,9 @@ h2 {
     color: #393939;
 }
 
-i {
-    font-family: 'Courier Prime', Courier, monospace;
-    font-size: clamp(0.8rem, 2vw, 1.2rem);
+h3 {
+    font-size: clamp(1rem, 3vw, 1.6rem);
+    color: #393939;
 }
 
 li {
@@ -46,7 +46,18 @@ a {
     font-weight: 600;
 }
 
+.note p {
+    width: 80%;
+    font-size: clamp(0.5rem, 1.8vw, 0.8rem);
+    color: #393939;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
 strong {
+    font-family: 'Courier Prime', Courier, monospace;
     font-size: clamp(0.8rem, 2vw, 1.2rem);
     color: #141414;
     font-weight: 600;
@@ -709,15 +720,14 @@ strong {
     justify-self: center;
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
     flex-basis: 300px;
     background-color: #141414;
-    padding: 5px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease-in-out;
     text-decoration: none;
-    width: 100%;
+    width: 95%;
     max-width: 1000px;
     max-height: 250px;
     height: auto;
@@ -750,7 +760,7 @@ strong {
     font-weight: 500;
     font-size: clamp(1rem, 4vw, 1.4rem);
     color: #fff;
-    width: 1000px;
+    width: 100%;
 }
 
 .card__subtitle {
@@ -1028,7 +1038,7 @@ strong {
     justify-content: center;
     overflow-wrap: wrap;
     background-color: #fff;
-    width: clamp(360px, 60%, 800px);
+    width: min(90%, 800px);
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
@@ -1212,7 +1222,7 @@ strong {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     height: clamp(100px, 20vw, 250px);
     max-width: 1200px;
     margin: 15px;
@@ -1223,15 +1233,13 @@ strong {
     justify-self: center;
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
-    flex-basis: 300px;
     background-color: #141414;
     padding: 5px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease-in-out;
     text-decoration: none;
-    width: 90%;
+    width: 80%;
     max-width: 1000px;
     height: 100%;
 }
