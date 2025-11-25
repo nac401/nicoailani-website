@@ -36,6 +36,14 @@ h2 {
     color: #393939;
 }
 
+h2 a {
+    padding-top: 1rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    text-align: center;
+    color: #393939;
+    text-decoration: underline;
+}
+
 h3 {
     font-size: clamp(1.5rem, 3vw, 2rem);
     color: #4f4f4f;
