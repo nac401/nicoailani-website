@@ -27,6 +27,7 @@ h1 {
     padding-top: 1rem;
     font-size: clamp(1.8rem, 4vw, 2.3rem);
     text-align: center;
+    justify-self: center;
 }
 
 h2 {
@@ -339,6 +340,28 @@ strong {
     width: 100%;
     justify-self: center;
     background-color: #141414;
+}
+
+.categories__box {
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.categories__box h2 {
+    font-size: 2rem;
+    font-family: 'Courier Prime', Courier, monospace;
+    color: #141414;
+}
+
+.categories__box a {
+    font-size: 2rem;
+    min-width: 180px;
+    justify-self: center;
 }
 
 /* --------------- Images Section CSS --------------- */
