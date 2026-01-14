@@ -25,61 +25,198 @@
     <!-- Navbar Section -->
     <script id="replace_with_navbar" src="js/nav.js"></script>
 
-    <!-- About Section -->
+    <!-- Portfolio Section -->
+    <div class="portfolio__container">
 
-    <div class="individual__work">
-        <div class="individual__work__container">
-            <div class="main__text">
-                <h1>nico ailani</h1>
-                <h2>systems designer</h2>
-                <p>I am a systems designer.</p>
-                <div class="separator"></div>
+        <div class="main__text">
+            <h1>nico ailani</h1>
+            <h2>systems designer</h2>
+        </div>
 
-                <p>Describing work and briefly describing contribution.</p>
+        
+        <div class="portfolio__images">
+            <div class="image__container">
+                <div class="main__image">
+                    <img class="individual__image"src="../images/narrative_reel_example.gif" alt="">
+                </div>
+            </div>
+        </div>
 
-                <a href="/work/youareawriter.html" class="card" data-name="game" style="margin: 25px;">
-                    <img src="images/YAAW/yaaw_icon.png" alt="">
-                    <div class="card__body">
-                        <h6 class="card__title">you are a writer</h6>
-                        <p class="card__subtitle">solo developer</p>
-                        <p class="card__text">A short form typing incremental game that puts you in the shoes of a modern day writer.</p>
-                    </div>
-                </a>
+        <div class="main__text">
+            <div class="separator"></div>
+            <p>I have been designing and implementing systems in digital games for 4+ years with an emphasis on creating intricate economies, systems that are intertwined with narrative, and balanced progression.</p>
+            <div class="separator"></div>
 
-                <p>Describing work and briefly describing contribution.</p>
+            <h3>systems implementation</h3>
+            <p>I have implemented game systems in <strong>Unity C#</strong>, <strong>Lua</strong>, and <strong>GDScript</strong> including using <strong>spreadsheets</strong> to balance, develop, and prove complex systems like game economies and progression scaling.</p>
+        </div>
 
-                <a href="/work/youareawriter.html" class="card" data-name="game" style="margin: 25px;">
-                    <img src="images/YAAW/yaaw_icon.png" alt="">
-                    <div class="card__body">
-                        <h6 class="card__title">you are a writer</h6>
-                        <p class="card__subtitle">solo developer</p>
-                        <p class="card__text">A short form typing incremental game that puts you in the shoes of a modern day writer.</p>
-                    </div>
-                </a>
+        <div class="portfolio__item">
+            <div class="portfolio__body">
+                <h4>you are a writer</h4>
+                <h5>2025 - Solo Developer</h5>
+                <p>A short-form typing incremental game where you must contend with the modern realities of being a writer.</p>
+            </div>
 
-                <p>Describing work and briefly describing contribution.</p>
-
-                <a href="/work/youareawriter.html" class="card" data-name="game" style="margin: 25px;">
-                    <img src="images/YAAW/yaaw_icon.png" alt="">
-                    <div class="card__body">
-                        <h6 class="card__title">you are a writer</h6>
-                        <p class="card__subtitle">solo developer</p>
-                        <p class="card__text">A short form typing incremental game that puts you in the shoes of a modern day writer.</p>
-                    </div>
-                </a>
-
-                <p>Describing work and briefly describing contribution.</p>
-
-                <div class="separator"></div>
-
-                <p>Concluding blurb?</p>
-
-                <div class="button__container">
-                    <a class="button" href="/work.html">
-                        <p>see more work</p>
-                    </a>
+            <div class="portfolio__images">
+                <div class="sub__image">
+                    <img class="individual__image"src="../images/YAAW/yaaw_1.gif" alt="">
+                </div>
+                <div class="sub__image">
+                    <img class="individual__image"src="../images/YAAW/yaaw_2.gif" alt="">
                 </div>
 
+                <div class="note"><p>you are a writer (pictured above), generates rudimentary but responsive text as you type.</p></div>
+            </div>
+
+            <div class="portfolio__body">
+                <p><i>you are a writer</i> was created over the course of only a couple of months of part-time work. My contributions include—</p>
+                <li><strong>Markov Text Generation.</strong> A responsive text generator using Markov Chains that changes subtly as you progress through the game.</li>
+                <li><strong>A Ruthless Economy.</strong> An incremental economy and supporting mechanics that rewards perfection and tempts you to engage with automation (though it is not required).</li>
+
+                <a href="/work/youareawriter.html" class="card" data-name="game" style="margin-top: 25px;">
+                    <img src="images/YAAW/yaaw_icon.png" alt="">
+                    <div class="card__body">
+                        <h6 class="card__title">you are a writer</h6>
+                        <p class="card__subtitle">solo developer</p>
+                        <p class="card__text">A short form typing incremental game that puts you in the shoes of a modern day writer.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="portfolio__item">
+            <div class="portfolio__body">
+                <h4>The Heist of the Argonaut Limited</h4>
+                <h5>2024 - Solo Developer / Writer</h5>
+                <p>A text adventure game for Panic's Playdate, inspired by classic TTRPGs, where you play the part of a witless criminal on a train heist where everything goes wrong.</p>
+            </div>
+
+            <div class="portfolio__images">
+                <div class="sub__image">
+                    <img class="individual__image"src="../images/HOTAL/hotal_gameexample.gif" alt="">
+                </div>
+                <div class="sub__image">
+                    <img class="individual__image"src="../images/HOTAL/hotal_gameexample2.gif" alt="">
+                </div>
+                <div class="note"><p>Argonaut Limited (pictured above), was built using Lua with the Playdate SDK to support a variety of character "voices" and textual expressions.</p></div>
+            </div>
+
+            <div class="portfolio__body">
+                <p>At the <strong>2024 Playdate Community Awards</strong>, we were honored with winning <strong>Best Narrative</strong>!</p>
+                <p>On <i>Argonaut Limited</i> I worked on everything as the sole developer (though I collabed with a pixel artist and musician) but most notably the--</p>
+                <li><strong>Text Adventure Engine.</strong> Built in Lua to be performant and expressive.</li>
+                <li><strong>Simplified RPG System.</strong> Created a pared down TTRPG-like system that allowed for abstracted interactions between characters, determined by dice rolls.</li>
+                <li><strong>Designing Progression.</strong> Created an economy of knowledge that allowed for the world and characters to be dynamic and reactive to player choice.</li>
+
+                <a href="/work/argonautlimited.html" class="card" data-name="game,game script,highlight" style="margin-top: 25px;">
+                    <img src="images/HOTAL/hotal_icon.png" alt="" style="object-position: bottom;">
+                    <div class="card__body">
+                        <h6 class="card__title">Heist of the Argonaut Limited</h6>
+                        <p class="card__subtitle">solo developer / writer</p>
+                        <p class="card__text">A Playdate text adventure where you play the part of a witless criminal hired for a daring train heist where everything goes wrong.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio__item">
+            <div class="portfolio__body">
+                <h4>Vanitas</h4>
+                <h5>2025 - Game Designer, Narrative Designer</h5>
+                <p>A jazzy mystery game where you play an evolving dice game with the strange passengers on a train to nowhere.</p>
+            </div>
+
+            <div class="portfolio__images">
+                <div class="sub__image">
+                    <img class="individual__image"src="../images/VANITAS/vanitas_example.gif" alt="">
+                </div>
+                <div class="sub__image">
+                    <img class="individual__image"src="../images/VANITAS/vanitas_capture.gif" alt="">
+                </div>
+
+                <div class="note"><p>Vanitas (pictured above), has a variety of special die faces that interact with the score differently.</p></div>
+            </div>
+
+            <div class="portfolio__body">
+                <p><i>Vanitas</i> was developed in <strong>Unity</strong> and the primary gameplay loop revolves around a simple but deep dice game. My contributions include—</p>
+                <li><strong>Designed Folk Game.</strong> Designing and balancing the core dice game that can evolve over time in tandem with character progression and the narrative arc.</li>
+                <li><strong>Supporting Narrative.</strong> Building and designing systems to support the narrative, including restricted camera and inspection/interaction systems.</li>
+
+                <a href="/work/vanitas.html" class="card" data-name="game,highlight" style="margin-top: 25px;">
+                    <img src="images/VANITAS/vanitas_icon.png" alt="">
+                    <div class="card__body">
+                        <h6 class="card__title">Vanitas</h6>
+                        <p class="card__subtitle">game / narrative designer</p>
+                        <p class="card__text">A jazzy mystery game where you play a constantly evolving dice game with the strange passengers on a train to nowhere.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="main__text">
+            <h3>systems exploration</h3>
+            <p>In addition to the above larger projects, I have developed a good many (very) small projects that were all developed in less than a week, many of which you can find in the <a href="/archive.html">archive</a>.</p>
+            <p>Following, I've included a couple of these smaller games that demonstrate a versatility in systems design.</p>
+        </div>
+
+        <div class="portfolio__item">
+            <div class="portfolio__body">
+                <h4>DIY</h4>
+                <h5>2025 - Solo Developer</h5>
+                <p>A short form incremental physics game where you start out really bad at hammering nails... but you eventually get <strong>really good</strong> at hammering nails.</p>
+
+                <a href="https://thewriterwins.itch.io/diy" class="card" data-name="games,prototypes" style="margin-top: 25px;">
+                    <img src="images/ARCHIVE/diy_logo.png" alt="">
+                    <div class="card__body">
+                        <h6 class="card__title">DIY</h6>
+                        <p class="card__text">hammer nails, very straight</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="portfolio__item">
+            <div class="portfolio__body">
+                <h4>WORK</h4>
+                <h5>2025 - Solo Developer</h5>
+                <p>A punishing typing rogue-like where you are working a job that is asking you to type unique words.</p>
+
+                <a href="https://thewriterwins.itch.io/work" class="card" data-name="games,prototypes" style="margin-top: 25px;">
+                    <img src="images/ARCHIVE/work_logo.png" alt="">
+                    <div class="card__body">
+                        <h6 class="card__title">WORK</h6>
+                        <p class="card__text">it's time to get to work</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="main__text">
+            <h3>collaborating</h3>
+            <p>Lastly (and proudly), I have worked a good number of different jobs in my life. I've worked as a bartender, barista, runner, electrician, producer, colorist, and writer just to name a few. Almost all of these jobs involved me working closely with others under pressure and communicating constantly with collaborators and clients. Check out my <a href="/resume.html">résumés</a> to see more details.</p>
+        </div>
+
+        <div class="main__text">
+            <div class="separator"></div>
+            <p>You made it to the bottom of the page! Check out the following links if you want more info and don't hesitate to reach out to me at <a href="mailto:me@nicoailani.com">me@nicoailani.com</a>.</p>
+
+            <div class="separator"></div>
+
+            <div class="button__container">
+                <a class="button" href="/pdfs/resumes/nico_carlson_resume.pdf">
+                    <p>see résumé</p>
+                </a>
+                <a class="button" href="/work.html">
+                    <p>see more work</p>
+                </a>
+                <a class="button" href="/contact.html">
+                    <p>contact</p>
+                </a>
             </div>
         </div>
     </div>

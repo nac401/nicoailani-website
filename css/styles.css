@@ -75,7 +75,7 @@ a {
     width: 80%;
     font-size: clamp(0.5rem, 1vw, 0.9rem);
     color: #393939;
-    text-align: center;
+    text-align: justify;
     justify-self: center;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -353,13 +353,15 @@ strong {
 }
 
 .categories__box h2 {
-    font-size: 2rem;
+    position: relative;
+    bottom: 3px;
+    font-size: clamp(1.5rem, 3vw, 2rem);;
     font-family: 'Courier Prime', Courier, monospace;
     color: #141414;
 }
 
 .categories__box a {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);;
     min-width: 180px;
     justify-self: center;
 }
