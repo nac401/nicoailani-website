@@ -551,6 +551,12 @@ strong {
     grid-row: span 1;
 }
 
+/*blog*/
+#item11 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
 .items__card p {
     position: absolute;
     align-items: center;
@@ -621,7 +627,13 @@ strong {
 
     /*contact*/
     #item10 {
-        grid-column: span 3;
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    /*blog*/
+    #item11 {
+        grid-column: span 1;
         grid-row: span 1;
     }
 }
@@ -1427,4 +1439,51 @@ strong {
     align-content: center;
     flex-wrap: wrap;
     padding: 5px 0px;
+}
+
+/* BLOG FORMATTING */
+
+.blog__container {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    align-items: left;
+    justify-content: top;
+    flex-direction: column;
+    margin: 0px auto;
+    min-height: 90vh;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
+    max-width: 800px;
+    padding: 5px 25px;
+}
+
+.blog__body {
+    justify-content: left;
+    justify-self: left;
+}
+
+.blog__body h1 {
+    padding-top: 1rem;
+    font-size: clamp(1.8rem, 4vw, 2.3rem);
+    text-align: left;
+    justify-self: left;
+    padding-bottom: 0px;
+}
+
+.blog__body h2 {
+    padding-top: 0px;
+    padding-bottom: 15px;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: #393939;
+    text-align: left;
+    justify-self: left;
+}
+
+.blog__body p {
+    font-family: 'Courier Prime', Courier, monospace;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
