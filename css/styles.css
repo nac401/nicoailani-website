@@ -525,7 +525,7 @@ strong {
 
 /*resume*/
 #item3 {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 2;
 }
 
@@ -547,7 +547,7 @@ strong {
 
 /*contact*/
 #item10 {
-    grid-column: span 1;
+    grid-column: span 2;
     grid-row: span 1;
 }
 
@@ -1466,16 +1466,28 @@ strong {
 
 .blog__body h1 {
     padding-top: 1rem;
-    font-size: clamp(1.8rem, 4vw, 2.3rem);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     text-align: left;
     justify-self: left;
     padding-bottom: 0px;
 }
 
 .blog__body h2 {
-    padding-top: 0px;
-    padding-bottom: 15px;
-    font-size: clamp(1.2rem, 3vw, 2rem);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    color: #393939;
+    text-align: left;
+    justify-self: left;
+}
+
+.blog__body h3 {
+    font-family: 'Courier Prime', Courier, monospace;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     color: #393939;
     text-align: left;
     justify-self: left;
@@ -1486,4 +1498,22 @@ strong {
     font-weight: 500;
     padding-top: 0.5rem;
     font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.blog__quote {
+    font-family: 'Courier Prime', Courier, monospace;
+    font-style: italic;
+    margin: 15px 0px;
+    padding: 0px 45px;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.blog__separator {
+    margin: 5px 0;
+    height: 3px;
+    width: 50%;
+    justify-self: left;
+    background-color: #141414;
 }
