@@ -1450,7 +1450,7 @@ strong {
     border: solid;
     border-color: #141414;
     border-radius: 5px;
-    margin: 15px;
+    margin: 10px;
     padding: 5px;
     width: clamp(100px, 50% - 800px/2, 250px);
     max-height: 200px;
