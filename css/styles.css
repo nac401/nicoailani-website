@@ -229,7 +229,7 @@ strong {
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 0;
-        height: 310px;
+        height: 250px;
     }
 
     #navbar__logo {
@@ -248,15 +248,16 @@ strong {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 25px;
+        padding: 20px;
         font-size: 1.2rem;
     }
 
     .navbar__links {
+        height: 50px;
         text-align: center;
         align-items: center;
         display: flex;
-        margin: 30px 0 0 0;
+        margin: 0 0 0 0;
     }
 
     #mobile-menu {
@@ -269,7 +270,7 @@ strong {
     .navbar__btn {
         width: max(300px, 60%);
         align-items: center;
-        padding: 40px;
+        padding: 15px;
     }
 
     .navbar__toggle .bar {
@@ -315,6 +316,20 @@ strong {
 .main__content {
     width: 90%;
     margin: 15px 50px;
+}
+
+.main__content p {
+    font-family: 'Courier Prime', Courier, monospace;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.main__content a {
+    font-family: 'Courier Prime', Courier, monospace;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .main__text {
@@ -692,7 +707,7 @@ strong {
 
 .footer__link--items a {
     color: #141414;
-    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+    font-size: clamp(1rem, 3vw, 1.5rem);
     font-family: 'Courier Prime', Courier, monospace;
     font-weight: 500;
     text-align: center;
@@ -1145,6 +1160,7 @@ strong {
     /* cursor and transition */
     cursor: pointer;
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .button p, .expander p {
@@ -1524,6 +1540,13 @@ strong {
 .blog__body p {
     font-family: 'Courier Prime', Courier, monospace;
     font-weight: 500;
+    padding-top: 0.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.blog__body a {
+    font-family: 'Courier Prime', Courier, monospace;
+    font-weight: 600;
     padding-top: 0.5rem;
     font-size: clamp(1rem, 2vw, 1.5rem);
 }
