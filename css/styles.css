@@ -1575,3 +1575,55 @@ strong {
     justify-self: left;
     background-color: #141414;
 }
+
+
+/* SUBSCRIBE FORMATTING */
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-color: #141414;
+    border-radius: 5px;
+    background: #fff;
+    color: #141414;
+    padding: 10px;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+}
+
+label {
+    font-family: 'Courier Prime', Courier, monospace;
+    font-weight: 600;
+    padding: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    font-weight: 500;
+    /*alignment*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    height: 100%;
+    width: 100%;
+    /*decoration*/
+    border: solid;
+    border-color: #141414;
+    border-radius: 5px;
+    background: #fff;
+    color: #141414;
+}
+
+input[type="submit"]:hover {
+    color: #fff;
+    background-color: #141414;
+    transition: all 0.3s ease;
+}
